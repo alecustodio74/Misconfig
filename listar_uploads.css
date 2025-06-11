@@ -1,0 +1,58 @@
+  body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+            align-items: center;
+        }
+
+        .arquivo {
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .arquivo img.thumb {
+            display: block;
+            margin: 0 auto;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .arquivo .icone {
+            font-size: 48px;
+        }
+
+        .arquivo span {
+            display: block;
+            margin-top: 8px;
+            font-size: 12px;
+            word-break: break-word;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }

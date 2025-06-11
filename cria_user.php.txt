@@ -1,0 +1,12 @@
+<?php
+header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none';");
+require_once 'conexao.php';
+
+$nome = 'admin4';
+$senhaHash = password_hash('Usuario@123', PASSWORD_DEFAULT);
+$stmt = $pdo->prepare("INSERT INTO usuarios (nome, senha) VALUES (?, ?)");
+$stmt->execute([$nome, $senhaHash]);
+echo "Usuário criado com sucesso!";
+
+//Temos nome: admin2 senha: senha123
+//Temos nome: admin4 senha: Usuario@123

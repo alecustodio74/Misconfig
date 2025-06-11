@@ -1,0 +1,10 @@
+# Impede execução de scripts PHP
+php_flag engine off
+
+# Impede listagem de arquivos
+Options -Indexes
+
+# Bloqueia qualquer acesso a arquivos PHP
+<FilesMatch "\.(php|phar)$">
+    Require all denied
+</FilesMatch>
