@@ -10,24 +10,27 @@ include 'config.php';
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-        <title>Site Seguro</title>
+        <title>Sobre</title>
      <meta name="author" content="Alexandre Ricardo Custódio de Souza">
     <meta name="keywords" content="Security Misconfiguration, Segurança da Informação, FATEC-PP, Professora ana Carolina Nicolossi">
     <link rel="stylesheet" href="estilo_index.css">
 </head>
 <body>
 
-    <?php //Título da página
-        $classe = verificaSegurancaTotal() ? 'seguro' : 'inseguro';
-        $mensagem = verificaSegurancaTotal() ? 'Bem-vindo ao Site Seguro!' : 'Bem-vindo ao Site Inseguro';
-        echo "<h1 class='$classe'>$mensagem</h1>";
-    ?>
+    <h1 class='$classe'>Security Misconfiguration A05:2021</h1>
 
     <div class="menu">
-        <a class="bloco" href="admin\painel.php">Painel de Administração</a>
-        <a class="bloco" href="status_seguro.php" target="_blank">Status dos Testes</a>
-        <a class="bloco" href="sobre.php">Sobre os alunos</a>
-        <a class="bloco" href="logout.php">Sair</a>
+        <a class="bloco" href="">Grupo 5</a>
+        <a class="bloco" href="">Alexandre Custódio<br>
+        Rafael Daun<br>
+        Rejane klebis<br>
+        Tiago de Almeida</a>
+
+        <a class="bloco" href="">Disciplina: Segurança da Informação<br>
+        Professora Ana Carolina Nicolosi R. Gracioso<br>
+        FATEC Presidente Prudente - SP - 2025<br></a>
+
+        <a class="bloco" href="index.php">Voltar</a>
     </div>
 
     <footer>
